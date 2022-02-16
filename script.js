@@ -1,14 +1,12 @@
 function playerPlay() {
-    let choice = prompt("Choose rock, paper or scissors.").toLowerCase();;
+    let choice = prompt("Choose rock, paper or scissors.").toLowerCase();
     
-    if (choice === 'rock' || choice === 'paper' || choice === 'scissors'){
-        return choice;
-    }
-    else {
-        console.log(`${choice} is an invalid input. Please choose rock, paper or scissors.`);
-        playerPlay();
+    while (choice.match(/^(rock|paper|scissors)$/) == null) {
+        console.log(`${choice} is an invalid choice. Please choose rock, paper or scissors`);
+        choice = prompt("Choose rock, paper or scissors.").toLowerCase();
     }
     
+    return choice;
 }
 
 function computerPlay() {
