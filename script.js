@@ -2,7 +2,7 @@ function playerPlay() {
     let choice = prompt("Choose rock, paper or scissors.").toLowerCase();
     
     while (choice.match(/^(rock|paper|scissors)$/) == null) {
-        console.log(`${choice} is an invalid choice. Please choose rock, paper or scissors`);
+        alert(`${choice} is an invalid choice. Please choose rock, paper or scissors`);
         choice = prompt("Choose rock, paper or scissors.").toLowerCase();
     }
     
@@ -41,6 +41,7 @@ function game() {
     
     for (let i = 0; i < 5; i++) {
         let results = playRound(playerPlay(), computerPlay());
+        alert(`Round ${i + 1}: ` + results[0]);
         console.log(`Round ${i + 1}: ` + results[0]);
         
         if (results[1] == 'player') {
