@@ -54,17 +54,21 @@ function game() {
     }
     
     console.log(`------Final Score------\n     Player: ${playerScore}\n     Computer: ${computerScore}\n-----------------------`);
+    alert(`------Final Score------\n     Player: ${playerScore}\n     Computer: ${computerScore}\n-----------------------`);
     
     if (playerScore > computerScore) {
         console.log('Player wins!');
+        alert('Player wins!')
     }
     
     else if (playerScore < computerScore) {
         console.log('Computer wins!');
+        alert('Computer wins!');
     }
 
     else {
         console.log("It's a tie!");
+        alert("It's a tie!");
     }
 }
 
