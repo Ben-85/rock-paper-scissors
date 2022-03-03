@@ -1,5 +1,5 @@
 function computerPlay() {
-    let randomNumber = Math.floor(Math.random() * 4);
+    let randomNumber = Math.floor(Math.random() * 3) + 1;
     if (randomNumber == 1) {
         return 'rock';
     }
