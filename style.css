@@ -1,0 +1,46 @@
+html {
+    background-color: #bcf5eb;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.playerSelect {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 25px;
+}
+
+#roundResult {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#scoreBoard {
+    display: flex;
+    justify-content: center;
+}
+
+#roundResult, #scoreBoard {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 35px;
+    border-width: 3px;
+    border-color: #1e90c9;
+    background-color: #ffe59e;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.button:active {
+    top: 10px;
+    left: 5px;
+    box-shadow: none;
+  }
